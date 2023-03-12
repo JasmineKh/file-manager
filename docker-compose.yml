@@ -1,0 +1,12 @@
+version: "3.9"
+    
+services:
+  aws-ip-range:
+    container_name:   file-manager
+    image:   file-manager:0.1
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    restart: always
